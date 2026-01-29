@@ -45,8 +45,8 @@ Run these scripts from the root directory:
 | `pnpm dev`     | Starts client and server in development mode concurrently. |
 | `pnpm build`   | Builds all packages in the workspace.                      |
 | `pnpm test`    | Runs tests across all packages (Vitest & Playwright).      |
-| `pnpm lint`    | Lints code using ESLint.                                   |
-| `pnpm format`  | Formats code using Prettier.                               |
+| `pnpm lint`    | Lints code using Oxlint.                                   |
+| `pnpm format`  | Formats code using Oxfmt.                                  |
 | `pnpm check`   | Runs type checking (`tsc`) and linting.                    |
 | `pnpm prepare` | Sets up Husky git hooks.                                   |
 
@@ -76,14 +76,13 @@ Run these scripts from the root directory:
 
 ### DevOps & Code Quality
 
-- **Linting**: [ESLint](https://eslint.org/) (v9, Flat Config)
-- **Formatting**: [Prettier](https://prettier.io/)
+- **Linting**: [Oxlint](https://oxc.rs/docs/guide/usage/linter)
+- **Formatting**: [Oxfmt](https://oxc.rs/docs/guide/usage/formatter)
 - **Git Hooks**: [Husky](https://typicode.github.io/husky/) & [lint-staged](https://github.com/okonet/lint-staged)
 - **CI/CD Readiness**: Scripts are optimized for CI environments (`check`, `test`, `build`).
 
 ## ⚙️ Configuration Files
 
 - `pnpm-workspace.yaml`: Defines the workspace structure.
-- `eslint.config.ts`: Root ESLint configuration (Flat Config).
-- `prettier.config.js`: Prettier configuration.
+- `.oxfmtrc.json`: Oxfmt configuration.
 - `tsconfig.json`: Base TypeScript configuration.
